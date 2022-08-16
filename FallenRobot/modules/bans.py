@@ -92,12 +92,12 @@ def ban(update: Update, context: CallbackContext) -> str:
         silent = False
     log = (
         f"<b>{html.escape(chat.title)}:</b>\n"
-        f"#{'S' if silent else ''}ʙᴀɴɴᴇᴅ\n"
-        f"<b>ʙᴀɴɴᴇᴅ ʙʏ:</b> {mention_html(user.id, html.escape(user.first_name))}\n"
-        f"<b>ᴜsᴇʀ:</b> {mention_html(member.user.id, html.escape(member.user.first_name))}"
+        f"#{'S' if silent else ''}ʙᴀɴɴᴇᴅ 🤬\n"
+        f"<b>ʙᴀɴɴᴇᴅ ʙʏ ➤ :</b> {mention_html(user.id, html.escape(user.first_name))}\n"
+        f"<b>ᴜsᴇʀ ⚰ :</b> {mention_html(member.user.id, html.escape(member.user.first_name))}"
     )
     if reason:
-        log += "\n<b>ʀᴇᴀsᴏɴ:</b> {}".format(reason)
+        log += "\n<b>ʀᴇᴀsᴏɴ ➤ :</b> {}".format(reason)
 
     try:
         chat.kick_member(user_id)
@@ -110,12 +110,12 @@ def ban(update: Update, context: CallbackContext) -> str:
 
         # bot.send_sticker(chat.id, BAN_STICKER)  # banhammer marie sticker
         reply = (
-            f"<code>❕</code><b>ʙᴀɴ ᴇᴠᴇɴᴛ</b>\n"
-            f"<code> </code><b>•  ʙᴀɴɴᴇᴅ ʙʏ:</b> {mention_html(user.id, user.first_name)}\n"
-            f"<code> </code><b>•  ᴜsᴇʀ:</b> {mention_html(member.user.id, html.escape(member.user.first_name))}"
+            f"<code>❕</code><b>🤬 ʙᴀɴ ᴇᴠᴇɴᴛ</b>\n"
+            f"<code> </code><b>•  ʙᴀɴɴᴇᴅ ʙʏ ➤ :</b> {mention_html(user.id, user.first_name)}\n"
+            f"<code> </code><b>•  ᴜsᴇʀ ⚰ :</b> {mention_html(member.user.id, html.escape(member.user.first_name))}"
         )
         if reason:
-            reply += f"\n<code> </code><b>•  ʀᴇᴀsᴏɴ:</b> \n{html.escape(reason)}"
+            reply += f"\n<code> </code><b>•  ʀᴇᴀsᴏɴ ➤ :</b> \n{html.escape(reason)}"
         bot.sendMessage(chat.id, reply, parse_mode=ParseMode.HTML, quote=False)
         return log
 
@@ -124,7 +124,7 @@ def ban(update: Update, context: CallbackContext) -> str:
             # Do not reply
             if silent:
                 return log
-            message.reply_text("ʙᴀɴɴᴇᴅ !", quote=False)
+            message.reply_text("🤬 ʙᴀɴɴᴇᴅ !", quote=False)
             return log
         else:
             LOGGER.warning(update)
