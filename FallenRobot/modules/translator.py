@@ -1,3 +1,4 @@
+
 from telegram import Update, ParseMode
 from telegram.ext import CallbackContext
 from gpytranslate import SyncTranslator
@@ -15,7 +16,7 @@ def totranslate(update: Update, context: CallbackContext) -> None:
             "Reply to messages or write messages from other languages ​​for translating into the intended language\n\n"
             "Example: `/tr en-hi` to translate from English to Hindi\n"
             "Or use: `/tr en` for automatic detection and translating it into english.\n"
-            "Click here to see [List of available Language Codes](https://t.me/DevilsHeavenMF/148391).",
+            "Click here to see [List of available Language Codes](https://t.me/https://telegra.ph/%CA%9F%E1%B4%80%C9%B4%C9%A2%E1%B4%9C%E1%B4%80%C9%A2%E1%B4%87-%E1%B4%84%E1%B4%8F%E1%B4%85%E1%B4%87s-%D2%93%E1%B4%8F%CA%80-%E1%B4%9B%CA%80%E1%B4%80%C9%B4s%CA%9F%E1%B4%80%E1%B4%9B%C9%AA%E1%B4%8F%C9%B4-%C9%AA%C9%B4-%E1%B4%87%E1%B4%A0%C9%AA%CA%9F-%C9%A2%CA%80%E1%B4%8F%E1%B4%9C%E1%B4%98-%E1%B4%8D%E1%B4%80%C9%B4%E1%B4%80%C9%A2%E1%B4%87%CA%80-%CA%99%E1%B4%8F%E1%B4%9B-07-17).",
             parse_mode="markdown",
             disable_web_page_preview=True,
         )
