@@ -132,7 +132,7 @@ def connect_chat(update, context):
                     chat_name = conn_chat.title
                     send_message(
                         update.effective_message,
-                        "Successfully connected to *{}*. \nUse /helpconnect to check available commands.".format(
+                        "Sᴜᴄᴄᴇssғᴜʟʟʏ ᴄᴏɴɴᴇᴄᴛᴇᴅ ᴛᴏ *{}*. \nUse /helpconnect to check available commands.".format(
                             chat_name
                         ),
                         parse_mode=ParseMode.MARKDOWN,
@@ -149,10 +149,10 @@ def connect_chat(update, context):
             if gethistory:
                 buttons = [
                     InlineKeyboardButton(
-                        text="❎ Close button", callback_data="connect_close"
+                        text="🔐 Cʟᴏsᴇ ʙᴜᴛᴛᴏɴ", callback_data="connect_close"
                     ),
                     InlineKeyboardButton(
-                        text="🧹 Clear history", callback_data="connect_clear"
+                        text="🧹 Cʟᴇᴀʀ ʜɪsᴛᴏʀʏ", callback_data="connect_clear"
                     ),
                 ]
             else:
@@ -165,13 +165,13 @@ def connect_chat(update, context):
                 )
                 buttons.append(
                     InlineKeyboardButton(
-                        text="🔌 Disconnect", callback_data="connect_disconnect"
+                        text="🔌 Dɪsᴄᴏɴɴᴇᴄᴛ", callback_data="connect_disconnect"
                     )
                 )
             else:
-                text = "Write the chat ID or tag to connect!"
+                text = "Wʀɪᴛᴇ ᴛʜᴇ ᴄʜᴀᴛ ID ᴏʀ ᴛᴀɢ ᴛᴏ ᴄᴏɴɴᴇᴄᴛ!"
             if gethistory:
-                text += "\n\n*Connection history:*\n"
+                text += "\n\n*Cᴏɴɴᴇᴄᴛɪᴏɴ ʜɪsᴛᴏʀʏ:*\n"
                 text += "╒═══「 *Info* 」\n"
                 text += "│  Sorted: `Newest`\n"
                 text += "│\n"
@@ -192,7 +192,7 @@ def connect_chat(update, context):
                             )
                         ]
                     )
-                text += "╘══「 Total {} Chats 」".format(
+                text += "╘══「 Tᴏᴛᴀʟ {} Cʜᴀᴛs 」".format(
                     str(len(gethistory)) + " (max)"
                     if len(gethistory) == 5
                     else str(len(gethistory))
@@ -224,7 +224,7 @@ def connect_chat(update, context):
                 chat_name = dispatcher.bot.getChat(chat.id).title
                 send_message(
                     update.effective_message,
-                    "Successfully connected to *{}*.".format(chat_name),
+                    "✅ Sᴜᴄᴄᴇssғᴜʟʟʏ ᴄᴏɴɴᴇᴄᴛᴇᴅ ᴛᴏ *{}*.".format(chat_name),
                     parse_mode=ParseMode.MARKDOWN,
                 )
                 try:
