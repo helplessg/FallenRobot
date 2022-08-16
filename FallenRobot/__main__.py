@@ -103,12 +103,12 @@ buttons = [
         InlineKeyboardButton(text="🛠 ʜᴇʟᴩ & ᴄᴏᴍᴍᴀɴᴅs 🛠", callback_data="help_back"),
     ],
     [
-        InlineKeyboardButton(text="🐉 ᴀʙᴏᴜᴛ 🐉", callback_data="fallen_"),
-        InlineKeyboardButton(text="📮 sᴜᴩᴩᴏʀᴛ 📮", url=f"https://t.me/{SUPPORT_CHAT}"),
+        InlineKeyboardButton(text="🐉 ᴀʙᴏᴜᴛ", callback_data="fallen_"),
+        InlineKeyboardButton(text="📮 sᴜᴩᴩᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"),
     ],
     [
-        InlineKeyboardButton(text="😈 ᴅᴇᴠᴇʟᴏᴩᴇʀ 😈", url=f"tg://user?id={OWNER_ID}"),
-        InlineKeyboardButton(text="🤖 sᴏᴜʀᴄᴇ 🤖", callback_data="source_"),
+        InlineKeyboardButton(text="😈 ᴅᴇᴠᴇʟᴏᴩᴇʀ", url=f"tg://user?id={OWNER_ID}"),
+        InlineKeyboardButton(text="🤖 sᴏᴜʀᴄᴇ", callback_data="source_"),
     ],
 ]
 
@@ -397,7 +397,7 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            text="📮 sᴜᴩᴩᴏʀᴛ", callback_data="hddubhub4uhelp"
+                            text="📮 sᴜᴩᴩᴏʀᴛ", callback_data="fallen_support"
                         ),
                         InlineKeyboardButton(
                             text="🛠 ᴄᴏᴍᴍᴀɴᴅs", callback_data="help_back"
@@ -430,7 +430,7 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
                             text="📮 sᴜᴩᴩᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"
                         ),
                         InlineKeyboardButton(
-                            text="🔮 ᴜᴩᴅᴀᴛᴇs", url="https://t.me/robo_glitch",
+                            text="🔮 ᴜᴩᴅᴀᴛᴇs", url="https://t.me/robo_glitch"
                         ),
                     ],
                     [
@@ -439,7 +439,7 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
                         ),
                         InlineKeyboardButton(
                             text="🎞 ᴍᴏᴠɪᴇs ɢʀᴏᴜᴘ",
-                            callback_data="https://t.me/dubbedweb",
+                            callback_data="https://t.me/dubbedweb"
                         ),
                     ],
                     [
