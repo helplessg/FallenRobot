@@ -95,7 +95,7 @@ PM_START_TEXT = """
 buttons = [
     [
         InlineKeyboardButton(
-            text="ᴀᴅᴅ ᴍᴇ ᴇʟsᴇ ʏᴏᴜ ɢᴇʏ",
+            text="✚ ᴀᴅᴅ ᴍᴇ ᴇʟsᴇ ʏᴏᴜ ɢᴇʏ ✚",
             url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
         ),
     ],
@@ -409,7 +409,7 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
                         ),
                         InlineKeyboardButton(
                             text="🐉 sᴏᴜʀᴄᴇ",
-                            callback_data="source_",
+                            url="https://t.me/GlitchAssistantBot",
                         ),
                     ],
                     [
@@ -430,16 +430,16 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
                             text="📮 sᴜᴩᴩᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"
                         ),
                         InlineKeyboardButton(
-                            text="🔮 ᴜᴩᴅᴀᴛᴇs", url=f"https://t.me/{SUPPORT_CHAT}"
+                            text="🔮 ᴜᴩᴅᴀᴛᴇs", url="https://t.me/robo_glitch",
                         ),
                     ],
                     [
                         InlineKeyboardButton(
-                            text="🍿 ᴍᴏᴠɪᴇS ᴄʜᴀɴɴᴇʟ 🎥", url="https://t.me/hddubhub4u"
+                            text="🍿 ᴍᴏᴠɪᴇS ᴄʜᴀɴɴᴇʟ", url="https://t.me/hddubhub4u"
                         ),
                         InlineKeyboardButton(
-                            text="😎 Oᴛʜᴇʀ ʙᴏᴛs",
-                            callback_data="https://t.me/robo_glitch",
+                            text="🎞 ᴍᴏᴠɪᴇs ɢʀᴏᴜᴘ",
+                            callback_data="https://t.me/dubbedweb",
                         ),
                     ],
                     [
@@ -569,14 +569,14 @@ def send_settings(chat_id, user_id, user=False):
             )
             dispatcher.bot.send_message(
                 user_id,
-                "These are your current settings:" + "\n\n" + settings,
+                "🛠 These are your current settings 🛠:" + "\n\n" + settings,
                 parse_mode=ParseMode.MARKDOWN,
             )
 
         else:
             dispatcher.bot.send_message(
                 user_id,
-                "Seems like there aren't any user specific settings available :'(",
+                "🙆 Seems like there aren't any user specific settings available 🙄 :'(",
                 parse_mode=ParseMode.MARKDOWN,
             )
 
@@ -780,7 +780,7 @@ def main():
                 f"@{SUPPORT_CHAT}",
                 animation="https://telegra.ph/file/16e69ef22efe20cea663b.jpg",
                 caption=f"""
-ㅤㅤ🥀 {BOT_NAME} ɪs ᴀʟɪᴠᴇ ʙᴀʙʏ...
+ㅤㅤ🥀 {BOT_NAME} ɪs ᴀʟɪᴠᴇ ɪs ᴀʟɪᴠᴇ ʙᴀʙʏ ᴅᴏɴ'ᴛ ᴡᴏʀʀʏ...💕
 
 ━━━━━━━━━━━━━
 ㅤ๏ **ᴘʏᴛʜᴏɴ :** `{y()}`
@@ -789,7 +789,7 @@ def main():
 ㅤ๏ **ᴩʏʀᴏɢʀᴀᴍ :** `{pyrover}`
 ━━━━━━━━━━━━━
 
-ᴍᴀᴅᴇ ᴡɪᴛʜ 🖤 ʙʏ [༒ᴛʜᴇ ɢʟɪᴛᴄʜs༒](https://t.me/{OWNER_USERNAME})""",
+ᴍᴀᴅᴇ ᴡɪᴛʜ 💔 ʙʏ [༒ᴛʜᴇ ɢʟɪᴛᴄʜs༒](https://t.me/{OWNER_USERNAME})""",
                 parse_mode=ParseMode.MARKDOWN,
             )
         except Unauthorized:
