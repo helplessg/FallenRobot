@@ -110,7 +110,7 @@ async def job_close():
         try:
             await tbot.send_message(
                 int(warner.chat_id),
-                "12:00 Am, Group Is Closing Till 6 Am. Night Mode Started ! \n**Powered By Fallen Robot**",
+                "💋 *Sᴡᴇᴇᴛ ɢᴏᴏᴅ ɴɪɢʜᴛ ᴛᴏ ᴏᴜʀ ғᴀᴍɪʟʏ* 🙆\n🌔🌓 *12:00 ᴀᴍ, ɢʀᴏᴜᴘ ɪs ᴄʟᴏsɪɴɢ ᴛɪʟʟ 9 ᴀᴍ ɴɪɢʜᴛ ᴍᴏᴅᴇ sᴛᴀʀᴛᴇᴅ*\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ❗ ᴇᴠɪʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇʀ ʙᴏᴛ* ⚡",
             )
             await tbot(
                 functions.messages.EditChatDefaultBannedRightsRequest(
@@ -123,7 +123,7 @@ async def job_close():
 
 # Run everyday at 12am
 scheduler = AsyncIOScheduler(timezone="Asia/Kolkata")
-scheduler.add_job(job_close, trigger="cron", hour=23, minute=59)
+scheduler.add_job(job_close, trigger="cron", hour=22, minute=59)
 scheduler.start()
 
 
@@ -135,7 +135,7 @@ async def job_open():
         try:
             await tbot.send_message(
                 int(warner.chat_id),
-                "06:00 Am, Group Is Opening.\n**Powered By Fallen Robot**",
+                "🌹 *ɢᴏᴏᴅ ᴍᴏʀɴɪɴɢ 🌞 Jᴀɴᴇᴍᴀɴs* 💃\n🌞🌝 *09:00 am *ᴀᴜᴛᴏᴍᴀᴛɪᴄ ɴɪɢʜᴛ ᴍᴏᴅᴇ ᴇɴᴅS ɢʀᴏᴜᴘ ɪs ᴏᴘᴇɴɪɴɢ ɴᴏᴡ ✔*</b>\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ❗ ᴇᴠɪʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇʀ ʙᴏᴛ* ⚡",
             )
             await tbot(
                 functions.messages.EditChatDefaultBannedRightsRequest(
@@ -148,7 +148,7 @@ async def job_open():
 
 # Run everyday at 06
 scheduler = AsyncIOScheduler(timezone="Asia/Kolkata")
-scheduler.add_job(job_open, trigger="cron", hour=6, minute=1)
+scheduler.add_job(job_open, trigger="cron", hour=9, minute=1)
 scheduler.start()
 
 __help__ = """
