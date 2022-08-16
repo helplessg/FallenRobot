@@ -7,13 +7,7 @@ from telethon.tl.functions.channels import GetFullChannelRequest
 from telethon.tl.types import ChannelParticipantsAdmins
 from telethon import events
 
-from telegram import (
-    MAX_MESSAGE_LENGTH,
-    ParseMode,
-    Update,
-    InlineKeyboardButton,
-    InlineKeyboardMarkup,
-)
+from telegram import MAX_MESSAGE_LENGTH, ParseMode, Update
 from telegram.ext import CallbackContext, CommandHandler
 from telegram.ext.dispatcher import run_async
 from telegram.error import BadRequest
@@ -299,6 +293,11 @@ def info(update: Update, context: CallbackContext):
         text += "\n\nᴛʜᴇ ᴅɪsᴀsᴛᴇʀ ʟᴇᴠᴇʟ ᴏғ ᴛʜɪs ᴜsᴇʀ ɪs <b>ᴡᴏʟғ</b>.\n"
         disaster_level_present = True
 
+    if disaster_level_present:
+        text += ' \n[<a href="https://t.me/robo_glitch">ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ᴋɴᴏᴡ ᴡʜᴀᴛ ɪs ᴅɪsᴀsᴛᴇʀ ʟᴇᴠᴇʟs.</a>]'.format(
+            bot.username
+        )
+
     try:
         user_member = chat.get_member(user.id)
         if user_member.status == "administrator":
@@ -329,19 +328,8 @@ def info(update: Update, context: CallbackContext):
             message.reply_document(
                 document=open(f"{user.id}.png", "rb"),
                 caption=(text),
-                reply_markup=InlineKeyboardMarkup(
-                    [
-                        [
-                            InlineKeyboardButton(
-                                "ʜᴇᴀʟᴛʜ", url="https://t.me/FallenXBots/7"
-                            ),
-                            InlineKeyboardButton(
-                                "ᴅɪꜱᴀꜱᴛᴇʀ", url="https://t.me/FallenXBots/8"
-                            ),
-                        ],
-                    ]
-                ),
                 parse_mode=ParseMode.HTML,
+                disable_web_page_preview=True,
             )
 
             os.remove(f"{user.id}.png")

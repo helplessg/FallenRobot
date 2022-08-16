@@ -44,10 +44,10 @@ async def ytmusic(client, message: Message):
     user_name = message.from_user.first_name
     chutiya = "[" + user_name + "](tg://user?id=" + str(user_id) + ")"
 
-    pablo = await client.send_message(message.chat.id, f"sᴇᴀʀᴄʜɪɴɢ, ᴩʟᴇᴀsᴇ ᴡᴀɪᴛ...")
+    pablo = await client.send_message(message.chat.id, f"🔍 **Sᴇᴀʀᴄʜɪɴɢ, ᴩʟᴇᴀsᴇ ᴡᴀɪᴛ**..\nᴢʏᴀᴅᴀ ᴊᴀʟᴅɪ ʜᴇ ᴛᴏʜ ʏᴏᴜᴛᴜʙᴇ ᴘᴇ ᴊᴀᴋᴇ ᴅᴇᴋʜʟᴇ\n")
     if not urlissed:
         await pablo.edit(
-            "😴 sᴏɴɢ ɴᴏᴛ ғᴏᴜɴᴅ ᴏɴ ʏᴏᴜᴛᴜʙᴇ.\n\n» ᴍᴀʏʙᴇ ᴛᴜɴᴇ ɢᴀʟᴛɪ ʟɪᴋʜᴀ ʜᴏ, ᴩᴀᴅʜᴀɪ - ʟɪᴋʜᴀɪ ᴛᴏʜ ᴋᴀʀᴛᴀ ɴᴀʜɪ ᴛᴜ !"
+            "😴 Sᴏɴɢ ɴᴏᴛ ғᴏᴜɴᴅ ᴏɴ ʏᴏᴜᴛᴜʙᴇ.\n\n» ᴍᴀʏʙᴇ ᴛᴜɴᴇ ɢᴀʟᴛɪ ʟɪᴋʜᴀ ʜᴏ, ᴩᴀᴅʜᴀɪ - ʟɪᴋʜᴀɪ ᴛᴏʜ ᴋᴀʀᴛᴀ ɴᴀʜɪ ᴛᴜ !"
         )
         return
 
@@ -81,11 +81,11 @@ async def ytmusic(client, message: Message):
             ytdl_data = ytdl.extract_info(url, download=True)
 
     except Exception as e:
-        await pablo.edit(f"**ғᴀɪʟᴇᴅ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ.** \n**ᴇʀʀᴏʀ :** `{str(e)}`")
+        await pablo.edit(f"**❌ ғᴀɪʟᴇᴅ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ.** \n**ᴇʀʀᴏʀ :ᴄᴏɴɴᴇᴄᴛ ᴅᴇᴠᴇʟᴏᴘᴇʀ via @GlitchAssistantBot ** `{str(e)}`")
         return
     c_time = time.time()
     file_stark = f"{ytdl_data['id']}.mp4"
-    capy = f"❄ **ᴛɪᴛʟᴇ :** [{thum}]({mo})\n💫 **ᴄʜᴀɴɴᴇʟ :** {thums}\n✨ **sᴇᴀʀᴄʜᴇᴅ :** {urlissed}\n🥀 **ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ :** {chutiya}"
+    capy = f"🎥 **ᴛɪᴛʟᴇ :** [{thum}]({mo})\n📺 **ᴄʜᴀɴɴᴇʟ :** {thums}\n✨ **Sᴇᴀʀᴄʜᴇᴅ :** {urlissed}\nᴘᴏᴡᴇʀᴇᴅ ʙʏ ❗ @robo_glitch\n🥀 **ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ :** {chutiya} "
     await client.send_video(
         message.chat.id,
         video=open(file_stark, "rb"),
@@ -97,7 +97,7 @@ async def ytmusic(client, message: Message):
         progress_args=(
             pablo,
             c_time,
-            f"» ᴩʟᴇᴀsᴇ ᴡᴀɪᴛ...\n\nᴜᴩʟᴏᴀᴅɪɴɢ `{urlissed}` ғʀᴏᴍ ʏᴏᴜᴛᴜʙᴇ sᴇʀᴠᴇʀs...💫",
+            f"» ⏳ ᴩʟᴇᴀSᴇ ᴡᴀɪᴛ..ᴢʏᴀᴅᴀ ᴊᴀʟᴅɪ ʜᴇ ᴛᴏʜ ʏᴏᴜᴛᴜʙᴇ ᴘᴇ ᴊᴀᴋᴇ ᴅᴇᴋʜʟᴇ!\n\nᴜᴩʟᴏᴀᴅɪɴɢ `{urlissed}` ғʀᴏᴍ ʏᴏᴜᴛᴜʙᴇ sᴇʀᴠᴇʀs...💫",
             file_stark,
         ),
     )
