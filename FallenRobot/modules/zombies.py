@@ -54,17 +54,17 @@ async def is_administrator(user_id: int, message):
 async def rm_deletedacc(show):
     con = show.pattern_match.group(1).lower()
     del_u = 0
-    del_status = "**Group clean, 0 deleted accounts found.**"
+    del_status = "**Gʀᴏᴜᴘ ᴄʟᴇᴀɴ, 0 ᴅᴇʟᴇᴛᴇᴅ ᴀᴄᴄᴏᴜɴᴛs ғᴏᴜɴᴅ**"
     if con != "clean":
-        kontol = await show.reply("`Searching for deleted account to fu*k...`")
+        kontol = await show.reply("☑ Sᴇᴀʀᴄʜɪɴɢ ғᴏʀ ᴅᴇʟᴇᴛᴇᴅ ᴀᴄᴄᴏᴜɴᴛ ᴛᴏ ғᴜ*ᴋ... 🔍")
         async for user in show.client.iter_participants(show.chat_id):
             if user.deleted:
                 del_u += 1
                 await sleep(1)
         if del_u > 0:
             del_status = (
-                f"**Searching...** `{del_u}` **Deleted account/Zombie On this group,"
-                "\nClean it with command** `/zombies clean`"
+                f"**☑ Sᴇᴀʀᴄʜɪɴɢ...🔍** `{del_u}` **⚰ Dᴇʟᴇᴛᴇᴅ ᴀᴄᴄᴏᴜɴᴛ/Zᴏᴍʙɪᴇ Oɴ ᴛʜɪs ɢʀᴏᴜᴘ 💀"
+                "\n⚡ Cʟᴇᴀɴ ɪᴛ ᴡɪᴛʜ ᴄᴏᴍᴍᴀɴᴅ 😈** `/zombies clean`"
             )
         return await kontol.edit(del_status)
     chat = await show.get_chat()
@@ -82,18 +82,18 @@ async def rm_deletedacc(show):
                     EditBannedRequest(show.chat_id, user.id, BANNED_RIGHTS)
                 )
             except ChatAdminRequiredError:
-                return await show.edit("`Not have a banned rights on this group`")
+                return await show.edit("✘ Nᴏᴛ ʜᴀᴠᴇ ᴀ ʙᴀɴɴᴇᴅ ʀɪɢʜᴛs ᴏɴ ᴛʜɪs ɢʀᴏᴜᴘ ☹︎")
             except UserAdminInvalidError:
                 del_u -= 1
                 del_a += 1
             await telethn(EditBannedRequest(show.chat_id, user.id, UNBAN_RIGHTS))
             del_u += 1
     if del_u > 0:
-        del_status = f"**Cleaned** `{del_u}` **Zombies**"
+        del_status = f"**😈 Cʟᴇᴀɴᴇᴅ ✔** `{del_u}` **⚰ Zᴏᴍʙɪᴇs 💀**"
     if del_a > 0:
         del_status = (
-            f"**Cleaned** `{del_u}` **Zombies** "
-            f"\n`{del_a}` **Admin zombies not deleted.**"
+            f"**😈 Cʟᴇᴀɴᴇᴅ ✔** `{del_u}` **⚰ Zᴏᴍʙɪᴇs 💀** "
+            f"\n`{del_a}` **✘ Aᴅᴍɪɴ ᴢᴏᴍʙɪᴇs ɴᴏᴛ ᴅᴇʟᴇᴛᴇᴅ ✘**"
         )
     await memek.edit(del_status)
 
