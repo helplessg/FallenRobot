@@ -103,7 +103,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(text="🐉 ᴀʙᴏᴜᴛ", callback_data="fallen_"),
-        InlineKeyboardButton(text="🤖 Bᴏᴛs", url="https://t.me/futurebackups/754"
+        InlineKeyboardButton(text="📮 Sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"),
     ],
     [
         InlineKeyboardButton(text="😈 ᴅᴇᴠᴇʟᴏᴩᴇʀ", url=f"tg://user?id={OWNER_ID}"),
