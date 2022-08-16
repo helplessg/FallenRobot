@@ -435,7 +435,7 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
                     ],
                     [
                         InlineKeyboardButton(
-                            text="😈 ᴅᴇᴠᴇʟᴏᴩᴇʀ", url=f"tg://user?id={OWNER_ID}"
+                            text="🍿 ᴍᴏᴠɪᴇS ᴄʜᴀɴɴᴇʟ 🎥", url="https://t.me/hddubhub4u"
                         ),
                         InlineKeyboardButton(
                             text="😎 Oᴛʜᴇʀ ʙᴏᴛs",
