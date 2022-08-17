@@ -469,13 +469,13 @@ Nᴏᴛ ᴀɴ ᴏᴩᴇɴ sᴏᴜʀᴄᴇ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴩ �
 
 *ᴍʏ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ɪs ɪɴ ᴅᴇᴠᴇʟᴏᴘᴍᴇɴᴛ ᴀɴᴅ ɴᴏᴛ ᴄᴏᴍᴘʟᴇᴛᴇᴅ sᴏ ɪғ ʏᴏᴜ ғᴏᴜɴᴅ*
 *ᴀɴʏ ʙᴜɢ ᴏʀ ɪғ ʏᴏᴜ ᴡᴀɴɴᴀ ʀᴇǫᴜᴇsᴛ*\n*ᴀɴʏ ғᴇᴀᴛᴜʀᴇ ᴩʟᴇᴀsᴇ ʟᴇᴛ ᴜs ᴋɴᴏᴡ*
-ᴀᴛ ➽ [[ᴇᴠɪʟs ʜᴇᴀᴠᴇɴ]](https://t.me/the_glitchs)
-*ᴏʀ ʏᴏᴜ ᴄᴀɴ ᴄᴏɴᴛᴀᴄᴛ ᴍʏ ᴅᴇᴠᴇʟᴏᴩᴇʀ* :[[ᴀssɪsᴛᴀɴᴛ ʙᴏᴛ]](https://t.me/GlitchAssistantBot)
+ᴀᴛ ➽ [ᴇᴠɪʟs ʜᴇᴀᴠᴇɴ](https://t.me/the_glitchs)
+*ᴏʀ ʏᴏᴜ ᴄᴀɴ ᴄᴏɴᴛᴀᴄᴛ ᴍʏ ᴅᴇᴠᴇʟᴏᴩᴇʀ* :[ᴀssɪsᴛᴀɴᴛ ʙᴏᴛ](https://t.me/GlitchAssistantBot)
 
 *ʜᴇʀᴇ ɪs ᴍʏ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ :*[༒ɢʟɪᴛᴄʜs༒](https://t.me/the_glitchs)
 
 {BOT_NAME} ɪs ʟɪᴄᴇɴsᴇᴅ ᴜɴᴅᴇʀ ᴛʜᴇ [ᴍɪᴛ ʟɪᴄᴇɴsᴇ](https://t.me/the_glitchs)
-©*2022 - 2023*\n[📮 Sᴜᴘᴘᴏʀᴛ](https://t.me/{SUPPORT_CHAT}) ᴀʟʟ ʀɪɢʜᴛs ʀᴇsᴇʀᴠᴇᴅ
+©2022-2023\n[📮 Sᴜᴘᴘᴏʀᴛ](https://t.me/{SUPPORT_CHAT}) ᴀʟʟ ʀɪɢʜᴛs ʀᴇsᴇʀᴠᴇᴅ
 """,
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -782,16 +782,16 @@ def main():
                 f"@{SUPPORT_CHAT}",
                 animation="https://telegra.ph/file/a29ee61e1a21983a621e6.mp4",
                 caption=f"""
-🥀 {BOT_NAME} ɪs ᴀʟɪᴠᴇ ʙᴀʙʏ ᴅᴏɴ'ᴛ ᴡᴏʀʀʏ...😈
+🥀 {BOT_NAME} ɪs ᴀʟɪᴠᴇ ʙᴀʙʏ ᴅᴏɴ'ᴛ ᴡᴏʀʀʏ 😈
 
-━━━━━━━━━━━━━
-ㅤ๏ **ᴘʏᴛʜᴏɴ :** `{y()}`
-ㅤ๏ **ʟɪʙʀᴀʀʏ :** `{telever}`
-ㅤ๏ **ᴛᴇʟᴇᴛʜᴏɴ :** `{tlhver}`
-ㅤ๏ **ᴩʏʀᴏɢʀᴀᴍ :** `{pyrover}`
-━━━━━━━━━━━━━
+✧━━━━━━━━━━━━━𖤐𖤐𖤐
+ㅤ๏ **ᴘʏᴛʜᴏɴ :** {y()}
+ㅤ๏ **ʟɪʙʀᴀʀʏ :** {telever}
+ㅤ๏ **ᴛᴇʟᴇᴛʜᴏɴ :** {tlhver}
+ㅤ๏ **ᴩʏʀᴏɢʀᴀᴍ :** {pyrover}
+✧━━━━━━━━━━━━━𖤐𖤐𖤐
 
-ᴍᴀᴅᴇ ᴡɪᴛʜ ʟᴏᴠᴇ ʙʏ [༒ɢʟɪᴛᴄʜs༒](https://t.me/{OWNER_USERNAME})""",
+ᴍᴀᴅᴇ ᴡɪᴛʜ ʟᴏᴠᴇ ʙʏ [ɢʟɪᴛᴄʜ](https://t.me/{OWNER_USERNAME})""",
                 parse_mode=ParseMode.MARKDOWN,
             )
         except Unauthorized:
