@@ -54,7 +54,7 @@ async def is_administrator(user_id: int, message):
 async def rm_deletedacc(show):
     con = show.pattern_match.group(1).lower()
     del_u = 0
-    del_status = "**Gʀᴏᴜᴘ ᴄʟᴇᴀɴ, 0 ᴅᴇʟᴇᴛᴇᴅ ᴀᴄᴄᴏᴜɴᴛs ғᴏᴜɴᴅ**"
+    del_status = "**Gʀᴏᴜᴘ ᴄʟᴇᴀɴ, 0 ᴅᴇʟᴇᴛᴇᴅ ᴀᴄᴄᴏᴜɴᴛs ғᴏᴜɴᴅ ⚡**"
     if con != "clean":
         kontol = await show.reply("☑ Sᴇᴀʀᴄʜɪɴɢ ғᴏʀ ᴅᴇʟᴇᴛᴇᴅ ᴀᴄᴄᴏᴜɴᴛ ᴛᴏ ғᴜ*ᴋ... 🔍")
         async for user in show.client.iter_participants(show.chat_id):
@@ -63,16 +63,16 @@ async def rm_deletedacc(show):
                 await sleep(1)
         if del_u > 0:
             del_status = (
-                f"**☑ Sᴇᴀʀᴄʜɪɴɢ...🔍** `{del_u}` **⚰ Dᴇʟᴇᴛᴇᴅ ᴀᴄᴄᴏᴜɴᴛ/Zᴏᴍʙɪᴇ Oɴ ᴛʜɪs ɢʀᴏᴜᴘ 💀"
-                "\n⚡ Cʟᴇᴀɴ ɪᴛ ᴡɪᴛʜ ᴄᴏᴍᴍᴀɴᴅ 😈** `/zombies clean`"
+                f"**☑ Sᴇᴀʀᴄʜɪɴɢ...🔍**\n `{del_u}` **Fᴏᴜɴᴅ Dᴇʟᴇᴛᴇᴅ ᴀᴄᴄᴏᴜɴᴛ/Zᴏᴍʙɪᴇ Oɴ ᴛʜɪs ɢʀᴏᴜᴘ 💀"
+                "\n😈 Cʟᴇᴀɴ ɪᴛ ᴡɪᴛʜ ᴄᴏᴍᴍᴀɴᴅ 🗑** `/zombies clean`"
             )
         return await kontol.edit(del_status)
     chat = await show.get_chat()
     admin = chat.admin_rights
     creator = chat.creator
     if not admin and not creator:
-        return await show.reply("**Sorry you're not admin!**")
-    memek = await show.reply("`Fu*king deleted accounts...`")
+        return await show.reply("**✘ Sᴏʀʀʏ ʏᴏᴜ'ʀᴇ ɴᴏᴛ ᴀᴅᴍɪɴ! 🤬**")
+    memek = await show.reply("**Fᴜ*ᴋɪɴɢ ᴅᴇʟᴇᴛᴇᴅ ᴀᴄᴄᴏᴜɴᴛs... 🗑**")
     del_u = 0
     del_a = 0
     async for user in telethn.iter_participants(show.chat_id):
@@ -82,18 +82,18 @@ async def rm_deletedacc(show):
                     EditBannedRequest(show.chat_id, user.id, BANNED_RIGHTS)
                 )
             except ChatAdminRequiredError:
-                return await show.edit("✘ Nᴏᴛ ʜᴀᴠᴇ ᴀ ʙᴀɴɴᴇᴅ ʀɪɢʜᴛs ᴏɴ ᴛʜɪs ɢʀᴏᴜᴘ ☹︎")
+                return await show.edit("**✘ Nᴏᴛ ʜᴀᴠᴇ ᴀ ʙᴀɴɴᴇᴅ ʀɪɢʜᴛs ᴏɴ ᴛʜɪs ɢʀᴏᴜᴘ ☹︎**")
             except UserAdminInvalidError:
                 del_u -= 1
                 del_a += 1
             await telethn(EditBannedRequest(show.chat_id, user.id, UNBAN_RIGHTS))
             del_u += 1
     if del_u > 0:
-        del_status = f"**😈 Cʟᴇᴀɴᴇᴅ ✔** `{del_u}` **⚰ Zᴏᴍʙɪᴇs 💀**"
+        del_status = f"**😈 Cʟᴇᴀɴᴇᴅ ✔** `{del_u}` **Zᴏᴍʙɪᴇs 💀**"
     if del_a > 0:
         del_status = (
-            f"**😈 Cʟᴇᴀɴᴇᴅ ✔** `{del_u}` **⚰ Zᴏᴍʙɪᴇs 💀** "
-            f"\n`{del_a}` **✘ Aᴅᴍɪɴ ᴢᴏᴍʙɪᴇs ɴᴏᴛ ᴅᴇʟᴇᴛᴇᴅ ✘**"
+            f"**😈 Cʟᴇᴀɴᴇᴅ ✔** `{del_u}` ** Zᴏᴍʙɪᴇs 💀** "
+            f"\n`{del_a}` **Aᴅᴍɪɴ ᴢᴏᴍʙɪᴇs ᴄᴀɴ'ᴛ ᴅᴇʟᴇᴛᴇᴅ ✘**"
         )
     await memek.edit(del_status)
 
