@@ -110,7 +110,7 @@ async def job_close():
         try:
             await tbot.send_message(
                 int(warner.chat_id),
-                "💋 *Sᴡᴇᴇᴛ ɢᴏᴏᴅ ɴɪɢʜᴛ ᴛᴏ ᴏᴜʀ ғᴀᴍɪʟʏ* 🙆\n🌔🌓 *12:00 ᴀᴍ, ɢʀᴏᴜᴘ ɪs ᴄʟᴏsɪɴɢ ᴛɪʟʟ 9 ᴀᴍ ɴɪɢʜᴛ ᴍᴏᴅᴇ sᴛᴀʀᴛᴇᴅ*\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ❗ ᴇᴠɪʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇʀ ʙᴏᴛ* ⚡",
+                "💋 Sᴡᴇᴇᴛ ɢᴏᴏᴅ ɴɪɢʜᴛ ᴛᴏ ᴏᴜʀ ғᴀᴍɪʟʏ 🙆\n🌓 12:00 ᴀᴍ, ɢʀᴏᴜᴘ ɪs ᴄʟᴏsɪɴɢ ᴛɪʟʟ 9 ᴀᴍ\nɴɪɢʜᴛ ᴍᴏᴅᴇ sᴛᴀʀᴛᴇᴅ ✔\nᴘᴏᴡᴇʀᴇᴅ ʙʏ ❗\nᴇᴠɪʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇʀ ʙᴏᴛ ⚡",
             )
             await tbot(
                 functions.messages.EditChatDefaultBannedRightsRequest(
@@ -135,7 +135,7 @@ async def job_open():
         try:
             await tbot.send_message(
                 int(warner.chat_id),
-                "🌹 *ɢᴏᴏᴅ ᴍᴏʀɴɪɴɢ 🌞 Jᴀɴᴇᴍᴀɴs* 💃\n🌞🌝 *09:00 am *ᴀᴜᴛᴏᴍᴀᴛɪᴄ ɴɪɢʜᴛ ᴍᴏᴅᴇ ᴇɴᴅS ɢʀᴏᴜᴘ ɪs ᴏᴘᴇɴɪɴɢ ɴᴏᴡ ✔*</b>\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ❗ ᴇᴠɪʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇʀ ʙᴏᴛ* ⚡",
+                "🌹 ɢᴏᴏᴅ ᴍᴏʀɴɪɴɢ Jᴀɴᴇᴍᴀɴs 💃\n🌝 09:00 am ᴀᴜᴛᴏᴍᴀᴛɪᴄ ɴɪɢʜᴛ ᴍᴏᴅᴇ ᴇɴᴅS\nɢʀᴏᴜᴘ ɪs ᴏᴘᴇɴɪɴɢ ɴᴏᴡ ✔\nᴘᴏᴡᴇʀᴇᴅ ʙʏ ❗\nᴇᴠɪʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇʀ ʙᴏᴛ ⚡",
             )
             await tbot(
                 functions.messages.EditChatDefaultBannedRightsRequest(
@@ -157,7 +157,7 @@ __help__ = """
  ❍ /nightmode*:* Adds Group to NightMode Chats
  ❍ /rmnight*:* Removes Group From NightMode Chats
 
-*Note:* Night Mode chats get Automatically closed at 12 am(IST) and Automatically openned at 6 am(IST) to Prevent Night Spams.
+*Note:* Night Mode chats get Automatically closed at 12 am(IST) and Automatically openned at 9 am(IST) to Prevent Night Spams.
 """
 
 __mod_name__ = "Nɪɢʜᴛ​"
