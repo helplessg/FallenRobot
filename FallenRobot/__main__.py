@@ -469,12 +469,12 @@ Nᴏᴛ ᴀɴ ᴏᴩᴇɴ sᴏᴜʀᴄᴇ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴩ �
 
 *ᴍʏ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ɪs ɪɴ ᴅᴇᴠᴇʟᴏᴘᴍᴇɴᴛ ᴀɴᴅ ɴᴏᴛ ᴄᴏᴍᴘʟᴇᴛᴇᴅ sᴏ ɪғ ʏᴏᴜ ғᴏᴜɴᴅ*
 *ᴀɴʏ ʙᴜɢ ᴏʀ ɪғ ʏᴏᴜ ᴡᴀɴɴᴀ ʀᴇǫᴜᴇsᴛ*\n*ᴀɴʏ ғᴇᴀᴛᴜʀᴇ ᴩʟᴇᴀsᴇ ʟᴇᴛ ᴜs ᴋɴᴏᴡ ᴀᴛ*
- ▶▶▶▶➽ [༒ᴇᴠɪʟs ʜᴇᴀᴠᴇɴ༒](https://t.me/the_glitchs)
-*ᴏʀ ʏᴏᴜ ᴄᴀɴ ᴄᴏɴᴛᴀᴄᴛ ᴍʏ ︾ ᴅᴇᴠᴇʟᴏᴩᴇʀ* : [『ᴀssɪsᴛᴀɴᴛ ʙᴏᴛ』](https://t.me/GlitchAssistantBot)
+ ➻ ➽ [༒ᴇᴠɪʟs ʜᴇᴀᴠᴇɴ༒](https://t.me/the_glitchs)
+*ᴏʀ ʏᴏᴜ ᴄᴀɴ ᴄᴏɴᴛᴀᴄᴛ ᴍʏ ᴅᴇᴠᴇʟᴏᴩᴇʀ* : [『ᴀssɪsᴛᴀɴᴛ ʙᴏᴛ』](https://t.me/GlitchAssistantBot)
 
 *ʜᴇʀᴇ ɪs ᴍʏ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ :* [༒ɢʟɪᴛᴄʜ༒](https://t.me/the_glitchs)
 
-{BOT_NAME} ɪs ʟɪᴄᴇɴsᴇᴅ ᴜɴᴅᴇʀ ᴛʜᴇ [ᴍɪᴛ ʟɪᴄᴇɴsᴇ](https://t.me/the_glitchs)©2022-2023
+{BOT_NAME} ɪs ʟɪᴄᴇɴsᴇᴅ ᴜɴᴅᴇʀ ᴛʜᴇ [ᴍɪᴛ ʟɪᴄᴇɴsᴇ](https://t.me/the_glitchs) ©2022-2023
 [📮 Sᴜᴘᴘᴏʀᴛ](https://t.me/{SUPPORT_CHAT}) ᴀʟʟ ʀɪɢʜᴛs ʀᴇsᴇʀᴠᴇᴅ
 """,
             parse_mode=ParseMode.MARKDOWN,
