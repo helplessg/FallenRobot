@@ -468,9 +468,9 @@ def Source_about_callback(update: Update, context: CallbackContext):
 Nᴏᴛ ᴀɴ ᴏᴩᴇɴ sᴏᴜʀᴄᴇ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴩ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ✘*
 
 *ᴍʏ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ɪs ɪɴ ᴅᴇᴠᴇʟᴏᴘᴍᴇɴᴛ ᴀɴᴅ ɴᴏᴛ ᴄᴏᴍᴘʟᴇᴛᴇᴅ sᴏ ɪғ ʏᴏᴜ ғᴏᴜɴᴅ*
-*ᴀɴʏ ʙᴜɢ ᴏʀ ɪғ ʏᴏᴜ ᴡᴀɴɴᴀ ʀᴇǫᴜᴇsᴛ*\n*ᴀɴʏ ғᴇᴀᴛᴜʀᴇ ᴩʟᴇᴀsᴇ ʟᴇᴛ ᴜs ᴋɴᴏᴡ ᴀᴛ*
- ➻ ➽ [༒ᴇᴠɪʟs ʜᴇᴀᴠᴇɴ༒](https://t.me/the_glitchs)
-*ᴏʀ ʏᴏᴜ ᴄᴀɴ ᴄᴏɴᴛᴀᴄᴛ ᴍʏ ᴅᴇᴠᴇʟᴏᴩᴇʀ* : [『ᴀssɪsᴛᴀɴᴛ ʙᴏᴛ』](https://t.me/GlitchAssistantBot)
+*ᴀɴʏ ʙᴜɢ ᴏʀ ɪғ ʏᴏᴜ ᴡᴀɴɴᴀ ʀᴇǫᴜᴇsᴛ*\n*ᴀɴʏ ғᴇᴀᴛᴜʀᴇ ᴩʟᴇᴀsᴇ ʟᴇᴛ ᴜs ᴋɴᴏᴡ ᴛʜʀᴏᴜɢʜ*
+ ➽ [『ᴀssɪsᴛᴀɴᴛ ʙᴏᴛ』](https://t.me/the_glitchs)
+*ᴏʀ ʏᴏᴜ ᴄᴀɴ ᴄᴏɴᴛᴀᴄᴛ ᴍʏ ᴅᴇᴠᴇʟᴏᴩᴇʀ* : [༒Tʜᴇ ɢʟɪᴛᴄʜs༒](https://t.me/GlitchAssistantBot)
 
 *ʜᴇʀᴇ ɪs ᴍʏ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ :* [༒ɢʟɪᴛᴄʜ༒](https://t.me/the_glitchs)
 
