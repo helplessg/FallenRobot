@@ -780,9 +780,9 @@ def main():
         try:
             dispatcher.bot.sendAnimation(
                 f"@{SUPPORT_CHAT}",
-                animation="https://telegra.ph/file/16e69ef22efe20cea663b.jpg",
+                photo="https://telegra.ph/file/16e69ef22efe20cea663b.jpg",
                 caption=f"""
-ㅤㅤ🥀 {BOT_NAME} ɪs ᴀʟɪᴠᴇ ɪs ᴀʟɪᴠᴇ ʙᴀʙʏ ᴅᴏɴ'ᴛ ᴡᴏʀʀʏ...💕
+ㅤㅤ🥀 {BOT_NAME} ɪs ᴀʟɪᴠᴇ ʙᴀʙʏ ᴅᴏɴ'ᴛ ᴡᴏʀʀʏ...💕
 
 ━━━━━━━━━━━━━
 ㅤ๏ **ᴘʏᴛʜᴏɴ :** `{y()}`
@@ -791,7 +791,7 @@ def main():
 ㅤ๏ **ᴩʏʀᴏɢʀᴀᴍ :** `{pyrover}`
 ━━━━━━━━━━━━━
 
-ᴍᴀᴅᴇ ᴡɪᴛʜ 💔 ʙʏ [༒ᴛʜᴇ ɢʟɪᴛᴄʜs༒](https://t.me/{OWNER_USERNAME})""",
+ᴍᴀᴅᴇ ᴡɪᴛʜ ʟᴏᴠᴇ ʙʏ [༒ɢʟɪᴛᴄʜs༒](https://t.me/{OWNER_USERNAME})""",
                 parse_mode=ParseMode.MARKDOWN,
             )
         except Unauthorized:
