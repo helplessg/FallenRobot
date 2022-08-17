@@ -468,14 +468,14 @@ def Source_about_callback(update: Update, context: CallbackContext):
 Nᴏᴛ ᴀɴ ᴏᴩᴇɴ sᴏᴜʀᴄᴇ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴩ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ✘*
 
 *ᴍʏ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ɪs ɪɴ ᴅᴇᴠᴇʟᴏᴘᴍᴇɴᴛ ᴀɴᴅ ɴᴏᴛ ᴄᴏᴍᴘʟᴇᴛᴇᴅ sᴏ ɪғ ʏᴏᴜ ғᴏᴜɴᴅ*
-*ᴀɴʏ ʙᴜɢ ᴏʀ ɪғ ʏᴏᴜ ᴡᴀɴɴᴀ ʀᴇǫᴜᴇsᴛ*\n*ᴀɴʏ ғᴇᴀᴛᴜʀᴇ ᴩʟᴇᴀsᴇ ʟᴇᴛ ᴜs ᴋɴᴏᴡ*
-ᴀᴛ ➽ [ᴇᴠɪʟs ʜᴇᴀᴠᴇɴ](https://t.me/the_glitchs)
-*ᴏʀ ʏᴏᴜ ᴄᴀɴ ᴄᴏɴᴛᴀᴄᴛ ᴍʏ ᴅᴇᴠᴇʟᴏᴩᴇʀ* :[ᴀssɪsᴛᴀɴᴛ ʙᴏᴛ](https://t.me/GlitchAssistantBot)
+*ᴀɴʏ ʙᴜɢ ᴏʀ ɪғ ʏᴏᴜ ᴡᴀɴɴᴀ ʀᴇǫᴜᴇsᴛ*\n*ᴀɴʏ ғᴇᴀᴛᴜʀᴇ ᴩʟᴇᴀsᴇ ʟᴇᴛ ᴜs ᴋɴᴏᴡ ᴀᴛ*
+ ▶▶▶▶➽ [༒ᴇᴠɪʟs ʜᴇᴀᴠᴇɴ༒](https://t.me/the_glitchs)
+*ᴏʀ ʏᴏᴜ ᴄᴀɴ ᴄᴏɴᴛᴀᴄᴛ ᴍʏ ︾ ᴅᴇᴠᴇʟᴏᴩᴇʀ* : [『ᴀssɪsᴛᴀɴᴛ ʙᴏᴛ』](https://t.me/GlitchAssistantBot)
 
-*ʜᴇʀᴇ ɪs ᴍʏ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ :*[༒ɢʟɪᴛᴄʜs༒](https://t.me/the_glitchs)
+*ʜᴇʀᴇ ɪs ᴍʏ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ :* [༒ɢʟɪᴛᴄʜ༒](https://t.me/the_glitchs)
 
-{BOT_NAME} ɪs ʟɪᴄᴇɴsᴇᴅ ᴜɴᴅᴇʀ ᴛʜᴇ [ᴍɪᴛ ʟɪᴄᴇɴsᴇ](https://t.me/the_glitchs)
-©2022-2023\n[📮 Sᴜᴘᴘᴏʀᴛ](https://t.me/{SUPPORT_CHAT}) ᴀʟʟ ʀɪɢʜᴛs ʀᴇsᴇʀᴠᴇᴅ
+{BOT_NAME} ɪs ʟɪᴄᴇɴsᴇᴅ ᴜɴᴅᴇʀ ᴛʜᴇ [ᴍɪᴛ ʟɪᴄᴇɴsᴇ](https://t.me/the_glitchs)©2022-2023
+[📮 Sᴜᴘᴘᴏʀᴛ](https://t.me/{SUPPORT_CHAT}) ᴀʟʟ ʀɪɢʜᴛs ʀᴇsᴇʀᴠᴇᴅ
 """,
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
