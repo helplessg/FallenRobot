@@ -60,7 +60,7 @@ async def upvote(_, message):
     new_karma = {"karma": karma}
     await update_karma(chat_id, await int_to_alpha(user_id), new_karma)
     await message.reply_text(
-        f"Iɴᴄʀᴇᴍᴇɴᴛᴇᴅ Kᴀʀᴍᴀ ᴏғ {user_mention} Bʏ 1 \n❤ Tᴏᴛᴀʟ Pᴏɪɴᴛs: {karma}"
+        f"Iɴᴄʀᴇᴍᴇɴᴛᴇᴅ Kᴀʀᴍᴀ ᴏғ {user_mention} Bʏ 1 \n⪼ Tᴏᴛᴀʟ Pᴏɪɴᴛs: {karma}"
     )
 
 
@@ -96,7 +96,7 @@ async def upvote(_, message):
     new_karma = {"karma": karma}
     await update_karma(chat_id, await int_to_alpha(user_id), new_karma)
     await message.reply_text(
-        f"Iɴᴄʀᴇᴍᴇɴᴛᴇᴅ Kᴀʀᴍᴀ ᴏғ {user_mention} Bʏ 1 \n❤ Tᴏᴛᴀʟ Pᴏɪɴᴛs: {karma}"
+        f"Iɴᴄʀᴇᴍᴇɴᴛᴇᴅ Kᴀʀᴍᴀ ᴏғ {user_mention} Bʏ 1 \n⪼ Tᴏᴛᴀʟ Pᴏɪɴᴛs: {karma}"
     )
 
 
@@ -133,7 +133,7 @@ async def downvote(_, message):
     new_karma = {"karma": karma}
     await update_karma(chat_id, await int_to_alpha(user_id), new_karma)
     await message.reply_text(
-        f"ᴅᴇᴄʀᴇᴍᴇɴᴛᴇᴅ ᴋᴀʀᴍᴀ Oғ {user_mention} Bʏ 1 \n💔 Tᴏᴛᴀʟ Pᴏɪɴᴛs: {karma}"
+        f"ᴅᴇᴄʀᴇᴍᴇɴᴛᴇᴅ ᴋᴀʀᴍᴀ Oғ {user_mention} Bʏ 1 \n⪼ Tᴏᴛᴀʟ Pᴏɪɴᴛs: {karma}"
     )
 
 
@@ -142,7 +142,7 @@ async def downvote(_, message):
 async def karma(_, message):
     chat_id = message.chat.id
     if not message.reply_to_message:
-        m = await message.reply_text("Aɴᴀʟʏᴢɪɴɢ Kᴀʀᴍᴀ...Wɪʟʟ Tᴀᴋᴇ 𝟷𝟶 Sᴇᴄᴏɴᴅs....")
+        m = await message.reply_text("Aɴᴀʟʏᴢɪɴɢ Kᴀʀᴍᴀ...Wɪʟʟ Tᴀᴋᴇ 10 Sᴇᴄᴏɴᴅs....")
         karma = await get_karmas(chat_id)
         if not karma:
             await m.edit("Nᴏ ᴋᴀʀᴍᴀ ɪɴ DB ғᴏʀ ᴛʜɪs ᴄʜᴀᴛ")
