@@ -110,7 +110,7 @@ async def job_close():
         try:
             await tbot.send_message(
                 int(warner.chat_id),
-                "🦋 Sᴡᴇᴇᴛ ɢᴏᴏᴅ ɴɪɢʜᴛ ғᴀᴍɪʟʏ 🦋\n🔐 ɢʀᴏᴜᴘ ɪs ᴄʟᴏsɪɴɢ ᴛɪʟʟ 9 ᴀᴍ 🌙 ɴɪɢʜᴛ ᴍᴏᴅᴇ sᴛᴀʀᴛᴇᴅ ✔ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ❗\nᴇᴠɪʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇʀ ʙᴏᴛ ⚡",
+                "🦋 ɢᴏᴏᴅ ɴɪɢʜᴛ ғᴀᴍɪʟʏ 🦋\n🔐 ɢʀᴏᴜᴘ ɪs ᴄʟᴏsɪɴɢ ᴛɪʟʟ 9 ᴀᴍ 🌙 ɴɪɢʜᴛ ᴍᴏᴅᴇ sᴛᴀʀᴛᴇᴅ ✔\n༆ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ❗\nᴇᴠɪʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇʀ ʙᴏᴛ ⚡",
             )
             await tbot(
                 functions.messages.EditChatDefaultBannedRightsRequest(
@@ -135,7 +135,7 @@ async def job_open():
         try:
             await tbot.send_message(
                 int(warner.chat_id),
-                "🐓 ɢᴏᴏᴅ ᴍᴏʀɴɪɴɢ Jᴀɴᴇᴍᴀɴs 💃\n⏰ ᴀᴜᴛᴏᴍᴀᴛɪᴄ ɴɪɢʜᴛ ᴍᴏᴅᴇ ᴇɴᴅS ✔ ɢʀᴏᴜᴘ ɪs ᴏᴘᴇɴɪɴɢ ɴᴏᴡ 🎉 ᴘᴏᴡᴇʀᴇᴅ ʙʏ ❗\nᴇᴠɪʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇʀ ʙᴏᴛ ⚡",
+                "🐓 ɢᴏᴏᴅ ᴍᴏʀɴɪɴɢ Jᴀɴᴇᴍᴀɴs 💃\n⏰ ᴀᴜᴛᴏᴍᴀᴛɪᴄ ɴɪɢʜᴛ ᴍᴏᴅᴇ ᴇɴᴅS ✔ ɢʀᴏᴜᴘ ɪs ᴏᴘᴇɴɪɴɢ ɴᴏᴡ 🎉\n༆ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ❗\nᴇᴠɪʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇʀ ʙᴏᴛ ⚡",
             )
             await tbot(
                 functions.messages.EditChatDefaultBannedRightsRequest(
