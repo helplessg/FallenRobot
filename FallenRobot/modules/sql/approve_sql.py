@@ -1,6 +1,6 @@
 import threading
 
-from sqlalchemy import Column, String, UnicodeText, BigInteger, func, distinct
+from sqlalchemy import BigInteger, Column, String
 
 from FallenRobot.modules.sql import BASE, SESSION
 

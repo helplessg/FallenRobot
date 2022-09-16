@@ -1,18 +1,16 @@
 from __future__ import unicode_literals
+
 import asyncio
-import math
-import io
 import os
 import time
-import requests
-import wget
-import yt_dlp
 from urllib.parse import urlparse
+
+import wget
 from pyrogram import filters
 from pyrogram.types import Message
-from yt_dlp import YoutubeDL
-from youtube_search import YoutubeSearch
 from youtubesearchpython import SearchVideos
+from yt_dlp import YoutubeDL
+
 from FallenRobot import pbot
 
 
@@ -44,7 +42,10 @@ async def ytmusic(client, message: Message):
     user_name = message.from_user.first_name
     chutiya = "[" + user_name + "](tg://user?id=" + str(user_id) + ")"
 
-    pablo = await client.send_message(message.chat.id, f"🔍 **Sᴇᴀʀᴄʜɪɴɢ, ᴩʟᴇᴀsᴇ ᴡᴀɪᴛ**..\nᴢʏᴀᴅᴀ ᴊᴀʟᴅɪ ʜᴇ ᴛᴏʜ ʏᴏᴜᴛᴜʙᴇ ᴘᴇ ᴊᴀᴋᴇ ᴅᴇᴋʜʟᴇ\n")
+    pablo = await client.send_message(
+        message.chat.id,
+        f"🔍 **Sᴇᴀʀᴄʜɪɴɢ, ᴩʟᴇᴀsᴇ ᴡᴀɪᴛ**..\nᴢʏᴀᴅᴀ ᴊᴀʟᴅɪ ʜᴇ ᴛᴏʜ ʏᴏᴜᴛᴜʙᴇ ᴘᴇ ᴊᴀᴋᴇ ᴅᴇᴋʜʟᴇ\n",
+    )
     if not urlissed:
         await pablo.edit(
             "😴 Sᴏɴɢ ɴᴏᴛ ғᴏᴜɴᴅ ᴏɴ ʏᴏᴜᴛᴜʙᴇ.\n\n» ᴍᴀʏʙᴇ ᴛᴜɴᴇ ɢᴀʟᴛɪ ʟɪᴋʜᴀ ʜᴏ, ᴩᴀᴅʜᴀɪ - ʟɪᴋʜᴀɪ ᴛᴏʜ ᴋᴀʀᴛᴀ ɴᴀʜɪ ᴛᴜ !"
@@ -77,11 +78,13 @@ async def ytmusic(client, message: Message):
     try:
         with YoutubeDL(opts) as ytdl:
             infoo = ytdl.extract_info(url, False)
-            duration = round(infoo["duration"] / 60)
+            round(infoo["duration"] / 60)
             ytdl_data = ytdl.extract_info(url, download=True)
 
     except Exception as e:
-        await pablo.edit(f"**❌ ғᴀɪʟᴇᴅ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ.** \n**ᴇʀʀᴏʀ :ᴄᴏɴɴᴇᴄᴛ ᴅᴇᴠᴇʟᴏᴘᴇʀ via @GlitchAssistantBot ** `{str(e)}`")
+        await pablo.edit(
+            f"**❌ ғᴀɪʟᴇᴅ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ.** \n**ᴇʀʀᴏʀ :ᴄᴏɴɴᴇᴄᴛ ᴅᴇᴠᴇʟᴏᴘᴇʀ via @GlitchAssistantBot ** `{str(e)}`"
+        )
         return
     c_time = time.time()
     file_stark = f"{ytdl_data['id']}.mp4"

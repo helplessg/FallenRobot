@@ -1,9 +1,8 @@
-import requests
-from requests import get
 from pyrogram import filters
-from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
-from FallenRobot import pbot as fallen, dispatcher, SUPPORT_CHAT
+from FallenRobot import SUPPORT_CHAT, dispatcher
+from FallenRobot import pbot as fallen
 
 
 @fallen.on_message(filters.command("write"))
